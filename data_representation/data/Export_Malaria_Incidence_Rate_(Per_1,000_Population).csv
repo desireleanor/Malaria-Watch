@@ -1,0 +1,329 @@
+Period,Age Group,Location,Value
+2018,"N/A","Bukedi",9
+2018,"N/A","Kigezi",20
+2018,"N/A","Karamoja",6
+2018,"N/A","Karamoja",81
+2018,"N/A","Busoga",74
+2018,"N/A","Busoga",3
+2018,"N/A","Bunyoro",3
+2018,"N/A","Bunyoro",84
+2018,"N/A","Bukedi",81
+2018,"N/A","Bugisu",6
+2018,"N/A","Bugisu",21
+2018,"N/A","Ankole",77
+2018,"N/A","Ankole",46
+2018,"N/A","Acholi",32
+2018,"N/A","Acholi",60
+2018,"N/A","Uganda",96
+2018,"N/A","Kigezi",62
+2018,"N/A","Uganda",96
+2018,"N/A","Lango",18
+2018,"N/A","Teso",65
+2018,"N/A","Teso",42
+2018,"N/A","Lango",65
+2019,"N/A","Bugisu",60
+2019,"N/A","Bugisu",13
+2019,"N/A","Bunyoro",4
+2019,"N/A","Bunyoro",85
+2019,"N/A","Busoga",30
+2019,"N/A","Busoga",5
+2019,"N/A","Karamoja",96
+2019,"N/A","Tooro",4
+2019,"N/A","Kigezi",69
+2019,"N/A","Kigezi",94
+2019,"N/A","Ankole",25
+2019,"N/A","Lango",74
+2019,"N/A","Teso",31
+2019,"N/A","Teso",49
+2019,"N/A","Karamoja",30
+2019,"N/A","Tooro",88
+2019,"N/A","Lango",49
+2019,"N/A","West Nile",93
+2019,"N/A","West Nile",97
+2019,"N/A","Uganda",81
+2019,"N/A","Uganda",96
+2019,"N/A","Bukedi",73
+2019,"N/A","Acholi",88
+2019,"N/A","Ankole",89
+2019,"N/A","Bukedi",45
+2019,"N/A","Acholi",43
+2020,"N/A","Karamoja",90
+2020,"N/A","Tooro",79
+2020,"N/A","Tooro",1
+2020,"N/A","Teso",92
+2020,"N/A","Teso",96
+2020,"N/A","Lango",96
+2020,"N/A","Lango",76
+2020,"N/A","Kigezi",89
+2020,"N/A","West Nile",90
+2020,"N/A","West Nile",5
+2020,"N/A","Busoga",2
+2020,"N/A","Uganda",97
+2020,"N/A","Uganda",93
+2020,"N/A","Acholi",96
+2020,"N/A","Busoga",98
+2020,"N/A","Acholi",90
+2020,"N/A","Ankole",90
+2020,"N/A","Ankole",7
+2020,"N/A","Bugisu",70
+2020,"N/A","Karamoja",55
+2020,"N/A","Bukedi",42
+2020,"N/A","Bukedi",72
+2020,"N/A","Bunyoro",28
+2020,"N/A","Kigezi",85
+2020,"N/A","Bunyoro",10
+2020,"N/A","Bugisu",42
+2021,"N/A","Bunyoro",32
+2021,"N/A","Bukedi",28
+2021,"N/A","Bukedi",34
+2021,"N/A","Bugisu",19
+2021,"N/A","Bugisu",30
+2021,"N/A","Acholi",84
+2021,"N/A","Ankole",5
+2021,"N/A","Acholi",41
+2021,"N/A","Uganda",89
+2021,"N/A","Bunyoro",53
+2021,"N/A","Ankole",86
+2021,"N/A","Busoga",29
+2021,"N/A","Lango",84
+2021,"N/A","Karamoja",2
+2021,"N/A","Karamoja",13
+2021,"N/A","Kigezi",30
+2021,"N/A","Kigezi",85
+2021,"N/A","Lango",72
+2021,"N/A","Uganda",96
+2021,"N/A","Teso",83
+2021,"N/A","Teso",67
+2021,"N/A","Tooro",92
+2021,"N/A","Tooro",89
+2021,"N/A","West Nile",85
+2021,"N/A","West Nile",97
+2021,"N/A","Busoga",46
+2022,"N/A","Bunyoro",76
+2022,"N/A","Acholi",10
+2022,"N/A","Ankole",72
+2022,"N/A","Ankole",8
+2022,"N/A","Bugisu",57
+2022,"N/A","Bugisu",7
+2022,"N/A","Bukedi",6
+2022,"N/A","Bukedi",23
+2022,"N/A","Bunyoro",85
+2022,"N/A","Busoga",70
+2022,"N/A","Lango",88
+2022,"N/A","Karamoja",97
+2022,"N/A","Karamoja",5
+2022,"N/A","Kigezi",90
+2022,"N/A","Lango",43
+2022,"N/A","Teso",97
+2022,"N/A","Teso",4
+2022,"N/A","Tooro",25
+2022,"N/A","Tooro",81
+2022,"N/A","West Nile",94
+2022,"N/A","West Nile",28
+2022,"N/A","Uganda",84
+2022,"N/A","Busoga",48
+2022,"N/A","Uganda",75
+2022,"N/A","Acholi",95
+2022,"N/A","Kigezi",6
+2023,"N/A","Karamoja",94
+2023,"N/A","Karamoja",28
+2023,"N/A","Kigezi",94
+2023,"N/A","Kigezi",5
+2023,"N/A","Lango",82
+2023,"N/A","Lango",57
+2023,"N/A","Bunyoro",73
+2023,"N/A","Teso",85
+2023,"N/A","Tooro",60
+2023,"N/A","Tooro",80
+2023,"N/A","West Nile",80
+2023,"N/A","West Nile",10
+2023,"N/A","Bunyoro",96
+2023,"N/A","Teso",4
+2023,"N/A","Busoga",83
+2023,"N/A","Uganda",28
+2023,"N/A","Uganda",84
+2023,"N/A","Acholi",71
+2023,"N/A","Acholi",96
+2023,"N/A","Bukedi",85
+2023,"N/A","Ankole",93
+2023,"N/A","Ankole",4
+2023,"N/A","Bugisu",88
+2023,"N/A","Bugisu",91
+2023,"N/A","Busoga",44
+2023,"N/A","Bukedi",4
+2024,"N/A","West Nile",27
+2024,"N/A","Uganda",84
+2024,"N/A","Uganda",90
+2024,"N/A","Acholi",95
+2024,"N/A","Acholi",4
+2024,"N/A","Ankole",5
+2024,"N/A","Ankole",38
+2024,"N/A","Bugisu",89
+2024,"N/A","Bugisu",49
+2024,"N/A","Bukedi",86
+2024,"N/A","Bukedi",76
+2024,"N/A","Bunyoro",69
+2024,"N/A","Bunyoro",95
+2024,"N/A","Busoga",5
+2024,"N/A","Karamoja",5
+2024,"N/A","Karamoja",5
+2024,"N/A","Kigezi",4
+2024,"N/A","Lango",88
+2024,"N/A","Lango",91
+2024,"N/A","Teso",4
+2024,"N/A","Teso",85
+2024,"N/A","Tooro",83
+2024,"N/A","Tooro",73
+2024,"N/A","West Nile",54
+2024,"N/A","Busoga",94
+2024,"N/A","Kigezi",53
+2020,"6 - 59 Months","Buganda",46
+2020,"6 - 59 Months","Buganda",41
+2020,"6 - 59 Months","West Nile",77
+2020,"6 - 59 Months","Tooro",57
+2020,"6 - 59 Months","Teso",66
+2020,"6 - 59 Months","Lango",64
+2020,"6 - 59 Months","Karamoja",93
+2020,"6 - 59 Months","Kampala",47
+2020,"6 - 59 Months","Busoga",53
+2020,"6 - 59 Months","Bunyoro",50
+2020,"6 - 59 Months","Bukedi",50
+2020,"6 - 59 Months","Ankole",72
+2020,"6 - 59 Months","Acholi",52
+2020,"6 - 59 Months","Kigezi",72
+2020,"6 - 59 Months","Bugisu",85
+2021,"6 - 59 Months","Buganda",68
+2021,"6 - 59 Months","Buganda",43
+2021,"6 - 59 Months","Acholi",60
+2021,"6 - 59 Months","Ankole",84
+2021,"6 - 59 Months","West Nile",100
+2021,"6 - 59 Months","Tooro",73
+2021,"6 - 59 Months","Teso",78
+2021,"6 - 59 Months","Lango",81
+2021,"6 - 59 Months","Kigezi",116
+2021,"6 - 59 Months","Karamoja",118
+2021,"6 - 59 Months","Kampala",49
+2021,"6 - 59 Months","Busoga",75
+2021,"6 - 59 Months","Bunyoro",60
+2021,"6 - 59 Months","Bukedi",66
+2021,"6 - 59 Months","Bugisu",151
+2022,"6 - 59 Months","Buganda",54
+2022,"6 - 59 Months","Buganda",54
+2022,"6 - 59 Months","West Nile",101
+2022,"6 - 59 Months","Teso",72
+2022,"6 - 59 Months","Lango",89
+2022,"6 - 59 Months","Kigezi",81
+2022,"6 - 59 Months","Karamoja",109
+2022,"6 - 59 Months","Tooro",79
+2022,"6 - 59 Months","Busoga",62
+2022,"6 - 59 Months","Bunyoro",50
+2022,"6 - 59 Months","Bukedi",63
+2022,"6 - 59 Months","Bugisu",120
+2022,"6 - 59 Months","Ankole",61
+2022,"6 - 59 Months","Kampala",60
+2022,"6 - 59 Months","Acholi",79
+2023,"6 - 59 Months","West Nile",89
+2023,"6 - 59 Months","Buganda",57
+2023,"6 - 59 Months","Bugisu",96
+2023,"6 - 59 Months","Ankole",45
+2023,"6 - 59 Months","Acholi",67
+2023,"6 - 59 Months","Teso",69
+2023,"6 - 59 Months","Lango",84
+2023,"6 - 59 Months","Kigezi",57
+2023,"6 - 59 Months","Karamoja",112
+2023,"6 - 59 Months","Tooro",54
+2023,"6 - 59 Months","Kampala",72
+2023,"6 - 59 Months","Busoga",57
+2023,"6 - 59 Months","Bunyoro",51
+2023,"6 - 59 Months","Bukedi",50
+2023,"6 - 59 Months","Buganda",44
+2024,"6 - 59 Months","Ankole",53
+2024,"6 - 59 Months","Buganda",62
+2024,"6 - 59 Months","Bunyoro",54
+2024,"6 - 59 Months","Bukedi",61
+2024,"6 - 59 Months","Bugisu",96
+2024,"6 - 59 Months","Acholi",74
+2024,"6 - 59 Months","Tooro",72
+2024,"6 - 59 Months","Teso",73
+2024,"6 - 59 Months","West Nile",99
+2024,"6 - 59 Months","Kigezi",77
+2024,"6 - 59 Months","Karamoja",112
+2024,"6 - 59 Months","Kampala",73
+2024,"6 - 59 Months","Busoga",64
+2024,"6 - 59 Months","Buganda",45
+2024,"6 - 59 Months","Lango",103
+2020,"12 - 59 Months","Acholi",26
+2020,"12 - 59 Months","Buganda",16
+2020,"12 - 59 Months","Ankole",40
+2020,"12 - 59 Months","Bukedi",32
+2020,"12 - 59 Months","Bunyoro",22
+2020,"12 - 59 Months","Busoga",30
+2020,"12 - 59 Months","Kampala",27
+2020,"12 - 59 Months","Karamoja",63
+2020,"12 - 59 Months","Bugisu",60
+2020,"12 - 59 Months","Lango",36
+2020,"12 - 59 Months","Teso",44
+2020,"12 - 59 Months","Tooro",32
+2020,"12 - 59 Months","West Nile",50
+2020,"12 - 59 Months","Buganda",24
+2020,"12 - 59 Months","Kigezi",43
+2021,"12 - 59 Months","Buganda",46
+2021,"12 - 59 Months","Buganda",27
+2021,"12 - 59 Months","Tooro",42
+2021,"12 - 59 Months","West Nile",80
+2021,"12 - 59 Months","Acholi",38
+2021,"12 - 59 Months","Bugisu",99
+2021,"12 - 59 Months","Bukedi",51
+2021,"12 - 59 Months","Bunyoro",39
+2021,"12 - 59 Months","Ankole",61
+2021,"12 - 59 Months","Kampala",30
+2021,"12 - 59 Months","Karamoja",96
+2021,"12 - 59 Months","Kigezi",79
+2021,"12 - 59 Months","Lango",54
+2021,"12 - 59 Months","Teso",60
+2021,"12 - 59 Months","Busoga",52
+2022,"12 - 59 Months","Lango",69
+2022,"12 - 59 Months","Teso",56
+2022,"12 - 59 Months","Tooro",55
+2022,"12 - 59 Months","West Nile",84
+2022,"12 - 59 Months","Acholi",55
+2022,"12 - 59 Months","Buganda",38
+2022,"12 - 59 Months","Bugisu",91
+2022,"12 - 59 Months","Bukedi",51
+2022,"12 - 59 Months","Bunyoro",33
+2022,"12 - 59 Months","Buganda",36
+2022,"12 - 59 Months","Kigezi",62
+2022,"12 - 59 Months","Ankole",44
+2022,"12 - 59 Months","Kampala",44
+2022,"12 - 59 Months","Karamoja",88
+2022,"12 - 59 Months","Busoga",50
+2023,"12 - 59 Months","Acholi",47
+2023,"12 - 59 Months","Bunyoro",35
+2023,"12 - 59 Months","Busoga",42
+2023,"12 - 59 Months","Kampala",53
+2023,"12 - 59 Months","Karamoja",92
+2023,"12 - 59 Months","Kigezi",44
+2023,"12 - 59 Months","Tooro",35
+2023,"12 - 59 Months","Teso",57
+2023,"12 - 59 Months","Buganda",27
+2023,"12 - 59 Months","West Nile",76
+2023,"12 - 59 Months","Ankole",36
+2023,"12 - 59 Months","Lango",64
+2023,"12 - 59 Months","Buganda",42
+2023,"12 - 59 Months","Bugisu",73
+2023,"12 - 59 Months","Bukedi",38
+2024,"12 - 59 Months","Busoga",53
+2024,"12 - 59 Months","Ankole",48
+2024,"12 - 59 Months","Bugisu",79
+2024,"12 - 59 Months","Bukedi",52
+2024,"12 - 59 Months","Bunyoro",45
+2024,"12 - 59 Months","Kampala",62
+2024,"12 - 59 Months","West Nile",88
+2024,"12 - 59 Months","Kigezi",60
+2024,"12 - 59 Months","Lango",86
+2024,"12 - 59 Months","Teso",65
+2024,"12 - 59 Months","Tooro",57
+2024,"12 - 59 Months","Acholi",57
+2024,"12 - 59 Months","Buganda",29
+2024,"12 - 59 Months","Karamoja",109
+2024,"12 - 59 Months","Buganda",51
