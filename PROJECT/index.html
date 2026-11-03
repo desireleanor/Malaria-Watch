@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Malaria Information Hub</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-success shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🦟 Malaria Information Hub</a>
+    <div class="ms-auto">
+      <span class="badge bg-light text-success">Live Data</span>
+    </div>
+  </div>
+</nav>
+    <!-- HEADER + SEARCH -->
+<div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4">
+  <div class="mb-3 mb-lg-0">
+    <h1 class="fw-bold" style="color:#14532d;">Malaria Data Datasets</h1>
+    <p class="text-muted mb-0">Explore, search, and download malaria datasets</p>
+  </div>
+  <div class="d-flex gap-2">
+    <div class="input-group">
+      <span class="input-group-text bg-white">🔍</span>
+      <input type="text" id="searchInput" class="form-control" placeholder="Search datasets...">
+    </div>
+    <button class="btn btn-success text-nowrap">↓ Export CSV</button>
+  </div>
+</div>
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
