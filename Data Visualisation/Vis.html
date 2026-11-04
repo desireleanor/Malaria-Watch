@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Malaria Information Hub</title>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    </head>
+    <body>
+      <header>
+      <h1>VISUALISATION TOOLS</h1>
+      <nav>
+        <ul>
+          <li><a href="#map-section">MAP</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="map-section">
+        <h2>MAP</h2>
+        <p>Select a dataset and year to explore reported values. Markers show approximate regional centers.</p>
+
+      <label for="dataset-select">Dataset</label>
+      <select id="dataset-select" aria-label="Select dataset" disabled>
+        <option>Loading datasets...</option>
+      </select>
+
+      <label for="year-select">Reporting year</label>
+      <select id="year-select" aria-label="Select reporting year" disabled>
+        <option>Loading years...</option>
+      </select>
+
+      <p>Regions shown: <strong id="region-count">-</strong></p>
+      <p>National total: <strong id="national-value">-</strong> <span id="unit-label"></span></p>
+
+      <div id="map" aria-label="Map plot of regional values">
+        <p aria-label="Map controls">
+          <button id="reset-map" type="button">Reset map view</button>
+          <span>Satellite imagery | Drag to pan | Scroll or use map controls to zoom</span>
+        </p>
+        <div id="map-canvas" role="application" aria-label="Satellite map of Uganda"></div>
+      </div>
+      <p id="map-detail" aria-live="polite">Select a marker to see details.</p>
+      <p id="status" role="alert" hidden></p>
+
+      <p id="dataset-note">Values use each dataset's unit. Repeated entries for a location and year are averaged. Marker size and color compare regional values for the selected year. Uganda is shown separately as the National Total; some datasets have national values only.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Uganda Malaria Information Hub | Data Visualisation</p>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script src="vis.js"></script>
+    </body>
+  </html>
