@@ -1,88 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore malaria data, trends, and prevention information for Uganda with Malaria Watch.">
-    <title>Malaria Watch | Uganda health data</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+Riza-KI-patch-1
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malaria Watch</title>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-dark bg-success">
-        <div class="container flex-column flex-md-row align-items-start align-items-md-center gap-2">
-            <a class="navbar-brand fw-bold mb-0" href="#home"><span class="badge bg-light text-success">MW</span> Malaria Watch</a>
-            <div class="d-flex flex-wrap gap-3" aria-label="Main navigation">
-                <a class="link-light" href="#about">About</a>
-                <a class="link-light" href="#sources">Our data</a>
-                <a class="link-light" href="#prevention">Prevention</a>
-                <a class="link-light" href="../Data%20Visualisation/Vis.html">Visualisations</a>
-                <a class="link-light fw-semibold" href="../data_representation/index.html">Datasets</a>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <header id="home" class="bg-success-subtle">
-            <div class="container py-5">
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-8">
-                        <p class="text-success fw-semibold text-uppercase">Uganda malaria information hub</p>
-                        <h1 class="display-3 fw-bold text-success-emphasis">Turning malaria data into clearer insight.</h1>
-                        <p class="lead text-secondary">Explore reported trends, regional patterns, and prevention information together in one accessible place.</p>
-                        <div class="d-flex flex-wrap gap-2 mt-4">
-                            <a class="btn btn-success btn-lg" href="../Data%20Visualisation/Vis.html">Explore visualisations <span aria-hidden="true">→</span></a>
-                            <a class="btn btn-outline-success btn-lg" href="#about">Learn about the project</a>
-                        </div>
-                        <p class="small text-secondary mt-4 mb-0">A student project for making Uganda malaria information easier to explore.</p>
-                    </div>
-                    <div class="col-lg-4 text-center"><div class="card border-success-subtle shadow-sm"><div class="card-body py-5"><span class="display-1 text-success" aria-hidden="true">✚</span><h2 class="h4 text-success-emphasis mt-3">Explore. Understand. Share.</h2><p class="text-secondary mb-0">Maps, charts, and source tables.</p></div></div></div>
-                </div>
-            </div>
-        </header>
-        <section class="container py-4" aria-label="Explore Malaria Watch">
-            <div class="row g-3">
-                <div class="col-md-4"><a class="card h-100 text-decoration-none text-body" href="../Data%20Visualisation/Vis.html"><div class="card-body"><span class="fs-3 text-success" aria-hidden="true">⌁</span><h2 class="h5 mt-2">See the trends</h2><p class="text-secondary mb-0">Explore the interactive map and charts.</p></div></a></div>
-                <div class="col-md-4"><a class="card h-100 text-decoration-none text-body" href="../data_representation/index.html"><div class="card-body"><span class="fs-3 text-success" aria-hidden="true">▤</span><h2 class="h5 mt-2">Browse datasets</h2><p class="text-secondary mb-0">Open the source data tables.</p></div></a></div>
-                <div class="col-md-4"><a class="card h-100 text-decoration-none text-body" href="#prevention"><div class="card-body"><span class="fs-3 text-success" aria-hidden="true">♥</span><h2 class="h5 mt-2">Learn prevention</h2><p class="text-secondary mb-0">Review ways to reduce malaria risk.</p></div></a></div>
-            </div>
+<body>
+
+    <header>
+       <h1>MALARIA WATCH</h1>
+       <p>Tracking Malaria Data in Uganda</p>
+     
+  <nav>
+     <ul>
+   <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#facts">Malaria Facts</a></li>
+  <li><a href="#sources">Data Sources</a></li>
+  <li><a href="#visualisation">Data Visualisation</a></li>
+  <li><a href="#relationships">Data Relationships</a></li>
+  <li><a href="#prevention">Prevention</a></li>
+  </ul>
+  </nav>
+     
+ 
+ </header>
+   <hr>
+<main>
+     <section id="home">
+      <h2>Welcome to Malaria Watch</h2>
+  <p>
+       Malaria Watch is focused on exploring and presenting malaria-related data in Uganda.
+            </p>
+            <p>
+ Our aim is to make malaria data easier to understand and acess through data analysis, visualisation and presentation.
+            </p>
+            <p>
+  Explore our website to learn about malaria, the data used in our project and the methods applied to analyse it.
+            </p>
+   <img src="images/malaria-home.jpg"
+      alt="Malaria awareness" width="400">
+
         </section>
-        <section id="about" class="container py-5">
-            <div class="row g-4">
-                <div class="col-lg-5"><p class="text-success fw-semibold text-uppercase">About the project</p><h2 class="display-6 fw-bold text-success-emphasis">A clearer view of malaria in Uganda.</h2><p class="text-secondary">Malaria Watch brings together malaria-related data and presents it through readable tables, charts, and maps. The goal is to support awareness, exploration, and informed discussion.</p></div>
-                <div class="col-lg-7"><div class="row g-3">
-                    <div class="col-sm-6"><article class="card h-100"><div class="card-body"><h3 class="h5">Track patterns</h3><p class="text-secondary mb-0">Explore how reported indicators change over time.</p></div></article></div>
-                    <div class="col-sm-6"><article class="card h-100"><div class="card-body"><h3 class="h5">Compare regions</h3><p class="text-secondary mb-0">View regional values and compare locations.</p></div></article></div>
-                    <div class="col-sm-6"><article class="card h-100"><div class="card-body"><h3 class="h5">Make data accessible</h3><p class="text-secondary mb-0">Review source tables in a more approachable format.</p></div></article></div>
-                    <div class="col-sm-6"><article class="card h-100"><div class="card-body"><h3 class="h5">Promote awareness</h3><p class="text-secondary mb-0">Connect data exploration with prevention information.</p></div></article></div>
-                </div></div>
-            </div>
+
+        <hr>
+ 
+        <section id="about">
+            <h2>About Malaria Watch</h2>
+
+            <p>
+            Malaria Watch is a group project that focuses on exploring malaria data in Uganda, analysing it and presenting it in a way understandable to the our website users.
+            </p>
+
+            <p>
+            The project involves collecting, cleaning, analysing and presenting data to help people understand
+            different aspects of malaria.
+            </p>
+
+            <p>
+            We use data analysis and visualisation to present information in a simple and understandable way.
+            </p>
+
+            <img src="images/health-workers.jpg"
+                 alt="Health workers" width="400">
+
         </section>
-        <section id="facts" class="bg-body-secondary py-5">
-            <div class="container"><div class="row align-items-center g-3"><div class="col-lg-9"><p class="text-success fw-semibold text-uppercase">Why track malaria?</p><h2 class="h2 fw-bold">Good information helps us ask better questions.</h2><p class="text-secondary mb-0">Reviewing trends and regional differences can help communities, health workers, and decision-makers understand where attention may be needed. Data is one part of the picture and should be considered alongside local context.</p></div><div class="col-lg-3"><a class="btn btn-success" href="../Data%20Visualisation/Vis.html">Explore the map →</a></div></div></div>
+
+        <hr>
+
+        <section id="facts">
+
+            <h2>Malaria Facts</h2>
+
+            <p>
+      Malaria is a life-threatening disease caused by Plasmodium parasites,
+       transmitted to humans through the bites of infected female Anopheles mosquitoes. 
+       It is preventable and curable but can progress to severe illness and death if not treated promptly.
+
+  High-Risk Groups are infants, children under 5, pregnant women, and patients with HIV/AIDS are most vulnerable. 
+  In Africa, children under 5 accounted for about 76% of all malaria deaths.
+
+ Transmission: Malaria is not contagious—it cannot spread from person to person like a cold. 
+             You get it solely from the bite of an infected mosquito.
+
+Treatment: Artemisinin-based combination therapies (ACTs) are the most effective treatment.
+            </p>
+
+            <h3>Common Symptoms</h3>
+
+            <ul>
+          <li>Fever</li>
+          <li>Headaches</li>
+         <li>Chills</li>
+          <li>Muscle aches</li>
+          <li>Vomiting</li>
+          <li>General body weakness</li>
+            </ul>
+            <p>
+         Malaria can become serious if it is not tested
+         for and treated early.
+            </p>
+
+            <img src="images/malaria-mosquito.jpg"
+                 alt="Mosquito associated with malaria" width="400">
+
         </section>
-        <section id="sources" class="container py-5">
-            <div class="row align-items-center g-4"><div class="col-lg-6"><p class="text-success fw-semibold text-uppercase">Data and process</p><h2 class="display-6 fw-bold text-success-emphasis">From source files to useful views.</h2><p class="text-secondary">The project reviewed 16 malaria-related datasets and selected Uganda Ministry of Health data for this exploration. Preparation focused on removing empty rows, handling missing cells, and organising indicators.</p><ol class="list-group list-group-numbered"><li class="list-group-item">Review available datasets</li><li class="list-group-item">Clean and organise selected data</li><li class="list-group-item">Explore tables, charts, and maps</li></ol></div>
-                <div class="col-lg-6"><div class="card shadow-sm"><div class="card-body"><span class="badge text-bg-success mb-3">Primary data source</span><h3 class="h4">Uganda Ministry of Health</h3><p class="text-secondary">Additional sources reviewed during research:</p><ul class="list-group list-group-flush"><li class="list-group-item">Uganda Bureau of Statistics (UBOS)</li><li class="list-group-item">World Health Organization (WHO)</li><li class="list-group-item">Our World in Data</li><li class="list-group-item">Hugging Face Datasets</li></ul><p class="small text-secondary mt-3 mb-0">Data definitions and reporting coverage may differ between datasets.</p></div></div></div>
-            </div>
+
+        <hr>
+        <section id="sources">
+
+            <h2>Data Sources</h2>
+
+            <p>
+          We explored different sources of malaria-related data.
+            </p>
+
+      <ul>
+      <li>Uganda Bureau of Statistics (UBOS)</li>
+      <li>World Health Organization (WHO)</li>
+      <li>Our World in Data</li>
+      <li>Hugging Face Datasets</li>
+       </ul>
+            <p>
+     Data source used:  Uganda Ministry of Health.
+            </p>
+
+         
+     <article>
+ <h3>Data Cleaning and Preparation</h3>
+<p>
+     
+  We worked with 16 datasets obtained for analysis to come up with an elaborate project.
+   </p>
+
+     <p>Our data cleaning process involved:</p>
+        <ul>
+          <li>Removing empty data rows.</li>
+            <li>Finding and removing similar information.</li>
+               
+       </ul>
+      <p>
+        We used Power BI to remove empty rows, handle
+      empty cells and organise data into suitable categories.
+     </p>
+ <p>
+     DAX Studio was then used to export the prepared data from Power BI into Excel files.
+                </p>
+
+  <img src="images/data-analysis.jpg"
+  alt="Data analysis and cleaning" width="400">
+
+    </article>
+  </section>
+
+ <hr>
+   <section id="visualisation">
+
+    <h2>Data Visualisation</h2>
+    <p>
+    Data visualisation presents information using graphs and charts instead of relying only on numbers.
+    </p>
+       
+    <p>
+   Our project uses different types of visualisations, including:
+    </p>
+
+  <ul>
+   <li>Bar graphs</li>
+   <li>Histograms</li>
+  <li>Pie charts, where applicable</li>
+  </ul>
+   <p>
+  These visualisations make it easier to identify patterns and understand the information in the datasets.
+   </p>
+    <p>
+     <a href="">View Data Visualisation</a>
+     </p>
         </section>
-        <section id="cleaning" class="bg-body-secondary py-5">
-            <div class="container"><div class="row g-4"><div class="col-md-4"><p class="text-success fw-semibold text-uppercase">Project toolkit</p><h2 class="h2 fw-bold">Built for practical exploration.</h2></div><div class="col-md-8"><div class="d-flex flex-wrap gap-2"><span class="badge text-bg-light border">Power BI · Data cleaning</span><span class="badge text-bg-light border">DAX Studio · Data export</span><span class="badge text-bg-light border">Bootstrap · Interface</span><span class="badge text-bg-light border">HTML · Web structure</span><span class="badge text-bg-light border">JavaScript · Interactions</span></div><p class="text-secondary mt-3 mb-0">Visual Studio Code was used to write and maintain the website.</p></div></div></div>
+
+    <hr>
+     <section id="relationships">
+      <h2>Data Relationships and Representation</h2>
+   <p>
+    Data relationships help us understand how information from different datasets is connected.
+    </p>
+
+    <p>
+    Tables and figures are used to present relationships between information from separate datasets.
+     </p>
+<p>
+     This helps users compare information and identify possible connections within the data.
+            </p>
+            <p>
+      <a href="">View Data Representation</a>
+      </p>
         </section>
-        <section id="visualisation" class="container py-5">
-            <div class="row align-items-center g-4"><div class="col-lg-8"><p class="text-success fw-semibold text-uppercase">Explore the data</p><h2 class="display-6 fw-bold text-success-emphasis">Different views reveal different details.</h2><p class="text-secondary">Use a map to inspect reported regional values, a bar chart to compare locations, and a line chart to follow indicators through time.</p><div class="d-flex flex-wrap gap-2"><span class="badge rounded-pill text-bg-success">Regional map</span><span class="badge rounded-pill text-bg-success">Comparison chart</span><span class="badge rounded-pill text-bg-success">Trend line</span></div></div><div class="col-lg-4"><a class="btn btn-success btn-lg" href="../Data%20Visualisation/Vis.html">Open visualisations →</a></div></div>
-        </section>
-        <section id="relationships" class="bg-success text-white py-5">
-            <div class="container"><div class="row align-items-center g-3"><div class="col-lg-8"><p class="text-white-50 text-uppercase fw-semibold">Start exploring</p><h2 class="h2 fw-bold">Ready to look closer?</h2><p class="mb-0">Explore the visualisations or open the underlying dataset tables.</p></div><div class="col-lg-4 d-flex flex-wrap gap-2"><a class="btn btn-light" href="../Data%20Visualisation/Vis.html">View visualisations</a><a class="btn btn-outline-light" href="../data_representation/index.html">Browse datasets</a></div></div></div>
-        </section>
-        <section id="prevention" class="container py-5">
-            <div class="row g-4"><div class="col-lg-5"><p class="text-success fw-semibold text-uppercase">Prevention and care</p><h2 class="display-6 fw-bold text-success-emphasis">Protect yourself and your community.</h2><p class="text-secondary">Malaria prevention includes reducing exposure to mosquito bites and seeking timely, appropriate care.</p><div class="alert alert-warning">If you have symptoms, seek advice from a qualified health professional and follow local health guidance.</div></div><div class="col-lg-7"><div class="row g-3">
-                <div class="col-sm-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success">01</span><h3 class="h5 mt-3">Sleep under a treated net</h3><p class="text-secondary mb-0">Use an insecticide-treated mosquito net as recommended.</p></div></div></div>
-                <div class="col-sm-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success">02</span><h3 class="h5 mt-3">Reduce mosquito breeding</h3><p class="text-secondary mb-0">Empty standing water where mosquitoes may breed.</p></div></div></div>
-                <div class="col-sm-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success">03</span><h3 class="h5 mt-3">Use protective measures</h3><p class="text-secondary mb-0">Consider approved repellents, clothing, and window screens.</p></div></div></div>
-                <div class="col-sm-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success">04</span><h3 class="h5 mt-3">Get tested and treated</h3><p class="text-secondary mb-0">Seek testing and follow a health professional's advice.</p></div></div></div>
-            </div></div></div>
-        </section>
-        <section id="challenges" class="bg-body-secondary py-5"><div class="container"><div class="row g-3"><div class="col-lg-4"><p class="text-success fw-semibold text-uppercase">Project notes</p><h2 class="h2 fw-bold">Working with real-world data.</h2></div><div class="col-lg-8"><p class="text-secondary">The project encountered empty files, missing values, overlapping indicators, and differences in how datasets were organised. These limitations matter when interpreting visualised results.</p><div class="alert alert-warning mb-0"><strong>Interpret with care.</strong> Values may use different units, reporting periods, and coverage. Consult the source dataset before drawing conclusions.</div></div></div></div></section>
+
+        <hr>
+
+        <section id="prevention">
+
+      <h2>Malaria Prevention</h2>
+       <p>
+   Malaria can be prevented through different practices that reduce exposure to infected mosquitoes.
+            </p>
+
+      <ul>
+     <li>Sleep under treated mosquito nets.</li>
+     <li>Use mosquito repellents.</li>
+    <li>Wear protective clothing, especially in the evening.</li>
+    <li>Remove stagnant water around the home.</li>
+    <li>Keep the surroundings clean.</li>
+    <li>Use window and door screens where possible.</li>
+    <li>Seek early testing and follow prescribed treatment.</li>
+     </ul>
+
+     <img src="images/mosquito-net.jpg"
+     alt="Treated mosquito net" width="400">
+   </section>
     </main>
-    <footer class="bg-success text-white py-4"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><strong>Malaria Watch</strong><span>Tracking malaria data in Uganda · © 2026</span></div></footer>
+
+    <hr>
+
+    <footer>
+
+    <h3>Malaria Watch</h3>
+
+      <p>
+     Exploring and presenting malaria data in Uganda.
+        </p>
+
+        <p>
+            Group H Project | 2026
+        </p>
+    
+  </footer>
 </body>
 </html>
+  
