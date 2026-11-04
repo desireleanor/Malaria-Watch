@@ -2,336 +2,237 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
-<title>Malaria Watch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malaria Watch</title>
 </head>
 <body>
-<nav>
- <a href="../data_representaion/index.html">DATA REPRESENTATION</a>
- <a href="../Data%20Visualisation/Vis.html">DATA VISUALISATION</a>
-</nav>
- <header>
-    <h1>Malaria Watch</h1>
-    <p>Tracking and Understanding Malaria Data in Uganda</p>
+
+    <header>
+       <h1>MALARIA WATCH</h1>
+       <p>Tracking Malaria Data in Uganda</p>
+     
+  <nav>
+     <ul>
+   <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#facts">Malaria Facts</a></li>
+  <li><a href="#sources">Data Sources</a></li>
+  <li><a href="#visualisation">Data Visualisation</a></li>
+  <li><a href="#relationships">Data Relationships</a></li>
+  <li><a href="#prevention">Prevention</a></li>
+  </ul>
+  </nav>
+     
+ 
+ </header>
+   <hr>
+<main>
+     <section id="home">
+      <h2>Welcome to Malaria Watch</h2>
+  <p>
+       Malaria Watch is focused on exploring and presenting malaria-related data in Uganda.
+            </p>
+            <p>
+ Our aim is to make malaria data easier to understand and acess through data analysis, visualisation and presentation.
+            </p>
+            <p>
+  Explore our website to learn about malaria, the data used in our project and the methods applied to analyse it.
+            </p>
+   <img src="images/malaria-home.jpg"
+      alt="Malaria awareness" width="400">
+
+        </section>
+
+        <hr>
+ 
+        <section id="about">
+            <h2>About Malaria Watch</h2>
+
+            <p>
+            Malaria Watch is a group project that focuses on exploring malaria data in Uganda, analysing it and presenting it in a way understandable to the our website users.
+            </p>
+
+            <p>
+            The project involves collecting, cleaning, analysing and presenting data to help people understand
+            different aspects of malaria.
+            </p>
+
+            <p>
+            We use data analysis and visualisation to present information in a simple and understandable way.
+            </p>
+
+            <img src="images/health-workers.jpg"
+                 alt="Health workers" width="400">
+
+        </section>
+
+        <hr>
+
+        <section id="facts">
+
+            <h2>Malaria Facts</h2>
+
+            <p>
+      Malaria is a life-threatening disease caused by Plasmodium parasites,
+       transmitted to humans through the bites of infected female Anopheles mosquitoes. 
+       It is preventable and curable but can progress to severe illness and death if not treated promptly.
+
+  High-Risk Groups are infants, children under 5, pregnant women, and patients with HIV/AIDS are most vulnerable. 
+  In Africa, children under 5 accounted for about 76% of all malaria deaths.
+
+ Transmission: Malaria is not contagious—it cannot spread from person to person like a cold. 
+             You get it solely from the bite of an infected mosquito.
+
+Treatment: Artemisinin-based combination therapies (ACTs) are the most effective treatment.
+            </p>
+
+            <h3>Common Symptoms</h3>
+
+            <ul>
+          <li>Fever</li>
+          <li>Headaches</li>
+         <li>Chills</li>
+          <li>Muscle aches</li>
+          <li>Vomiting</li>
+          <li>General body weakness</li>
+            </ul>
+            <p>
+         Malaria can become serious if it is not tested
+         for and treated early.
+            </p>
+
+            <img src="images/malaria-mosquito.jpg"
+                 alt="Mosquito associated with malaria" width="400">
+
+        </section>
+
+        <hr>
+        <section id="sources">
+
+            <h2>Data Sources</h2>
+
+            <p>
+          We explored different sources of malaria-related data.
+            </p>
+
+      <ul>
+      <li>Uganda Bureau of Statistics (UBOS)</li>
+      <li>World Health Organization (WHO)</li>
+      <li>Our World in Data</li>
+      <li>Hugging Face Datasets</li>
+       </ul>
+            <p>
+     Data source used:  Uganda Ministry of Health.
+            </p>
+
+         
+     <article>
+ <h3>Data Cleaning and Preparation</h3>
+<p>
+     
+  We worked with 16 datasets obtained for analysis to come up with an elaborate project.
+   </p>
+
+     <p>Our data cleaning process involved:</p>
+        <ul>
+          <li>Removing empty data rows.</li>
+            <li>Finding and removing similar information.</li>
+               
+       </ul>
+      <p>
+        We used Power BI to remove empty rows, handle
+      empty cells and organise data into suitable categories.
+     </p>
+ <p>
+     DAX Studio was then used to export the prepared data from Power BI into Excel files.
+                </p>
+
+  <img src="images/data-analysis.jpg"
+  alt="Data analysis and cleaning" width="400">
+
+    </article>
+  </section>
+
+ <hr>
+   <section id="visualisation">
+
+    <h2>Data Visualisation</h2>
+    <p>
+    Data visualisation presents information using graphs and charts instead of relying only on numbers.
+    </p>
        
-     <nav>
-         <a href="#about">About</a> |
-          <a href="#facts">Malaria Facts</a> |
-         <a href="#sources">Data Sources</a> |
-        <a href="#cleaning">Data Cleaning</a> |
-        <a href="#tools">Tools Used</a> |
-         <a href="#visualisation">Visualisation</a> |
-        <a href="#relationships">Data Relationships</a> |
-        <a href="#prevention">Prevention</a> |
-        <a href="#challenges">Challenges</a>
-        </nav>
-    </header>
-    <hr>
+    <p>
+   Our project uses different types of visualisations, including:
+    </p>
 
-    <section id="home">
-        <h2>Welcome to Malaria Watch</h2>
-
-        <img src="images/malaria-home.jpg"
-             alt="Malaria awareness and prevention">
-
-        <p>
-            Malaria Watch is a project that focuses on
-            tracking and presenting malaria-related data
-            in Uganda.
-        </p>
-
-        <p>
-            The project aims to make malaria information
-            easier to understand through tables, charts
-            and graphs.
-        </p>
-    </section>
+  <ul>
+   <li>Bar graphs</li>
+   <li>Histograms</li>
+  <li>Pie charts, where applicable</li>
+  </ul>
+   <p>
+  These visualisations make it easier to identify patterns and understand the information in the datasets.
+   </p>
+    <p>
+     <a href="">View Data Visualisation</a>
+     </p>
+        </section>
 
     <hr>
+     <section id="relationships">
+      <h2>Data Relationships and Representation</h2>
+   <p>
+    Data relationships help us understand how information from different datasets is connected.
+    </p>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About the Project</h2>
+    <p>
+    Tables and figures are used to present relationships between information from separate datasets.
+     </p>
+<p>
+     This helps users compare information and identify possible connections within the data.
+            </p>
+            <p>
+      <a href="">View Data Representation</a>
+      </p>
+        </section>
 
-        <img src="images/malaria-mosquito.jpg"
-             alt="Anopheles mosquito">
+        <hr>
 
-        <p>
-            Malaria Watch was developed to help people
-            understand malaria patterns in Uganda using
-            available data.
-        </p>
+        <section id="prevention">
 
-        <p>
-            The project brings together different datasets
-            to provide information that can support
-            awareness, analysis and decision-making.
-        </p>
+      <h2>Malaria Prevention</h2>
+       <p>
+   Malaria can be prevented through different practices that reduce exposure to infected mosquitoes.
+            </p>
 
-        <h3>Project Objectives</h3>
+      <ul>
+     <li>Sleep under treated mosquito nets.</li>
+     <li>Use mosquito repellents.</li>
+    <li>Wear protective clothing, especially in the evening.</li>
+    <li>Remove stagnant water around the home.</li>
+    <li>Keep the surroundings clean.</li>
+    <li>Use window and door screens where possible.</li>
+    <li>Seek early testing and follow prescribed treatment.</li>
+     </ul>
 
-        <ul>
-            <li>Track malaria-related information in Uganda.</li>
-            <li>Identify trends in malaria cases.</li>
-            <li>Present malaria data in a simple way.</li>
-            <li>Show relationships between different datasets.</li>
-            <li>Promote malaria awareness.</li>
-        </ul>
-    </section>
+     <img src="images/mosquito-net.jpg"
+     alt="Treated mosquito net" width="400">
+   </section>
+    </main>
 
     <hr>
 
-    <!-- MALARIA FACTS -->
-    <section id="facts">
-        <h2>Why Track Malaria?</h2>
-
-        <p>
-            Tracking malaria helps us understand how the
-            disease affects different areas and how the
-            number of reported cases changes over time.
-        </p>
-
-        <p>
-            It can also help health workers and decision-makers
-            plan prevention and treatment activities.
-        </p>
-
-        <img src="images/health-workers.jpg"
-             alt="Healthcare workers providing health services">
-    </section>
-
-    <hr>
-
-    <!-- DATA SOURCES -->
-    <section id="sources">
-        <h2>Source of Data</h2>
-
-        <p>
-            During data collection, we explored different
-            sources of malaria-related information.
-        </p>
-
-        <ul>
-            <li>Uganda Bureau of Statistics (UBOS)</li>
-            <li>World Health Organization (WHO)</li>
-            <li>Our World in Data</li>
-            <li>Hugging Face Datasets</li>
-        </ul>
-
-        <p>
-            After reviewing these sources, we agreed to
-            use data from the Uganda Ministry of Health.
-        </p>
-
-        <p>
-            A total of 16 datasets were reviewed during
-            the data collection process.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- DATA CLEANING -->
-    <section id="cleaning">
-        <h2>How We Accessed and Cleaned the Data</h2>
-
-        <img src="images/data-analysis.jpg"
-             alt="Data analysis on a computer">
-
-        <p>
-            We reviewed the 16 datasets collected during
-            the project.
-        </p>
-
-        <p>
-            Three datasets were empty, while one dataset
-            contained information similar to another dataset.
-        </p>
-
-        <p>
-            We used Power BI to clean and organise the data.
-            The process involved:
-        </p>
-
-        <ul>
-            <li>Removing empty rows.</li>
-            <li>Handling empty cells.</li>
-            <li>Categorising the data.</li>
-        </ul>
-
-        <p>
-            We then used DAX Studio to export the prepared
-            data from Power BI into Excel files.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- TOOLS AND LANGUAGES -->
-    <section id="tools">
-        <h2>Tools and Languages Used</h2>
-
-        <h3>Tools</h3>
-
-        <ul>
-            <li>Power BI - Used to clean and organise data.</li>
-            <li>DAX Studio - Used to export data into Excel files.</li>
-            <li>Bootstrap - Used for website design and layout.</li>
-            <li>Visual Studio Code - Used to write and edit code.</li>
-        </ul>
-
-        <h3>Programming Languages</h3>
-
-        <ul>
-            <li>HTML</li>
-            <li>Python</li>
-            <li>SQL</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- DATA VISUALISATION -->
-    <section id="visualisation">
-        <h2>Data Visualisation</h2>
-
-        <p>
-            Data visualisation helps us present information
-            using charts and graphs.
-        </p>
-
-        <p>Some of the visualisation methods include:</p>
-
-        <ul>
-            <li>Bar graphs - Used to compare different values.</li>
-            <li>Histograms - Used to show data distribution.</li>
-            <li>Pie charts - Used to show proportions and percentages.</li>
-        </ul>
-
-        <p>
-            Visit the Data Visualisation page to explore
-            the charts and graphs.
-        </p>
-
-        <!-- ADD DATA VISUALISATION LINK HERE -->
-        <a href="">View Data Visualisation</a>
-    </section>
-
-    <hr>
-
-    <!-- DATA RELATIONSHIPS -->
-    <section id="relationships">
-        <h2>Data Relationships</h2>
-
-        <p>
-            This section shows how information from
-            different datasets is related.
-        </p>
-
-        <p>
-            Tables and figures are used to compare
-            information and show relationships between
-            the datasets.
-        </p>
-
-        <!-- ADD DATA REPRESENTATION LINK HERE -->
-        <a href="">View Data Representation</a>
-    </section>
-
-    <hr>
-
-    <!-- MALARIA PREVENTION -->
-    <section id="prevention">
-        <h2>Measures Used to Prevent Malaria</h2>
-
-        <img src="images/mosquito-net.jpg"
-             alt="Insecticide-treated mosquito net">
-
-        <p>
-            Malaria can be prevented by avoiding mosquito
-            bites and reducing mosquito breeding places.
-        </p>
-
-        <ul>
-            <li>
-                <strong>Using mosquito nets:</strong>
-                Sleep under insecticide-treated mosquito nets.
-            </li>
-
-            <li>
-                <strong>Using mosquito repellents:</strong>
-                Apply approved mosquito repellents.
-            </li>
-
-            <li>
-                <strong>Wearing protective clothing:</strong>
-                Wear long-sleeved shirts and long trousers.
-            </li>
-
-            <li>
-                <strong>Removing stagnant water:</strong>
-                Empty containers where water collects.
-            </li>
-
-            <li>
-                <strong>Keeping the environment clean:</strong>
-                Clear rubbish and maintain clean surroundings.
-            </li>
-
-            <li>
-                <strong>Installing window screens:</strong>
-                Use screens to prevent mosquitoes from
-                entering houses.
-            </li>
-
-            <li>
-                <strong>Seeking medical attention:</strong>
-                Get tested when experiencing malaria symptoms
-                and follow prescribed treatment.
-            </li>
-        </ul>
-
-        <p>
-            Everyone has a role to play in preventing
-            and reducing malaria.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- CHALLENGES -->
-    <section id="challenges">
-        <h2>Pitfalls and Challenges</h2>
-
-        <p>
-            During the project, we faced some challenges
-            when accessing and preparing the data.
-        </p>
-
-        <ul>
-            <li>Finding suitable and reliable datasets.</li>
-            <li>Dealing with empty datasets.</li>
-            <li>Handling missing information.</li>
-            <li>Identifying datasets with similar information.</li>
-            <li>Organising information from different datasets.</li>
-        </ul>
-
-        <p>
-            These challenges helped us understand the
-            importance of cleaning and organising data
-            before analysing it.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- FOOTER -->
     <footer>
-        <h3>Malaria Watch</h3>
 
-        <p>Tracking malaria data in Uganda.</p>
+    <h3>Malaria Watch</h3>
 
-        <p>2026 Malaria Watch Project</p>
-    </footer>
+      <p>
+     Exploring and presenting malaria data in Uganda.
+        </p>
 
+        <p>
+            Group H Project | 2026
+        </p>
+ </footer>
 </body>
 </html>
