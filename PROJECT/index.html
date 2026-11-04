@@ -2,49 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Malaria Information Hub</title>
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Malaria Watch project overview and links to malaria datasets and visualisations.">
+    <title>Malaria Watch | Project overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body class="bg-light">
-
-    <nav class="navbar navbar-dark bg-success shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">🦟 Malaria Information Hub</a>
-    <div class="ms-auto">
-      <span class="badge bg-light text-success">Live Data</span>
-    </div>
-  </div>
-</nav>
-    <!-- HEADER + SEARCH -->
-<div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4">
-  <div class="mb-3 mb-lg-0">
-    <h1 class="fw-bold" style="color:#14532d;">Malaria Data Datasets</h1>
-    <p class="text-muted mb-0">Explore, search, and download malaria datasets</p>
-  </div>
-  <div class="d-flex gap-2">
-    <div class="input-group">
-      <span class="input-group-text bg-white">🔍</span>
-      <input type="text" id="searchInput" class="form-control" placeholder="Search datasets...">
-    </div>
-    <button class="btn btn-success text-nowrap">↓ Export CSV</button>
-  </div>
-</div>
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container flex-column flex-md-row align-items-start align-items-md-center gap-2">
+            <a class="navbar-brand fw-bold mb-0" href="../malaria_watch-homepage/index.html"><span class="badge bg-light text-success">MW</span> Malaria Watch</a>
+            <div class="d-flex flex-wrap gap-3"><a class="link-light" href="../malaria_watch-homepage/index.html">Project home</a><a class="link-light" href="../Data%20Visualisation/Vis.html">Visualisations</a><a class="link-light" href="../data_representation/index.html">Datasets</a></div>
+        </div>
+    </nav>
+    <header class="bg-success-subtle">
+        <div class="container py-5">
+            <p class="text-success fw-semibold text-uppercase">Uganda · Public health data</p>
+            <h1 class="display-3 fw-bold text-success-emphasis mt-3 mb-3">A more useful way to explore malaria data.</h1>
+            <p class="lead text-secondary mb-4">Malaria Watch brings datasets, regional views, and trend visualisations together to make information easier to navigate.</p>
+            <a class="btn btn-success btn-lg px-4" href="../Data%20Visualisation/Vis.html">Open data explorer <span aria-hidden="true">→</span></a>
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="mb-4"><p class="text-success fw-semibold text-uppercase mb-2">Choose a starting point</p><h2 class="h3 fw-bold mb-0">Explore Malaria Watch</h2></div>
+        <div class="row g-4">
+            <div class="col-md-6"><a class="card h-100 text-decoration-none text-body" href="../Data%20Visualisation/Vis.html"><article class="card-body"><span class="badge text-bg-success fs-5 mb-3" aria-hidden="true">⌖</span><h2 class="h4 text-success-emphasis">Interactive visualisations</h2><p class="text-secondary">Explore the regional map, compare selected values, and review trends over time.</p><span class="text-success fw-semibold">Explore the map and charts →</span></article></a></div>
+            <div class="col-md-6"><a class="card h-100 text-decoration-none text-body" href="../data_representation/index.html"><article class="card-body"><span class="badge text-bg-success fs-5 mb-3" aria-hidden="true">▤</span><h2 class="h4 text-success-emphasis">Dataset library</h2><p class="text-secondary">Open the available source tables for reported and estimated malaria indicators.</p><span class="text-success fw-semibold">Browse datasets →</span></article></a></div>
+        </div>
+        <div class="alert alert-warning mt-4 mb-0" role="note"><strong>Please note:</strong> Reporting periods, units, and geographic coverage can differ between datasets. Check source definitions before comparing values.</div>
     </main>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script> 
-
-    <script src="script.js"></script>
-
+    <footer class="bg-success text-white py-4 mt-4"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><strong>Malaria Watch</strong><span class="text-white-50">Tracking malaria data in Uganda · 2026</span></div></footer>
 </body>
 </html>
