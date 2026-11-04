@@ -45,6 +45,73 @@
 
       <p id="dataset-note">Values use each dataset's unit. Repeated entries for a location and year are averaged. Marker size and color compare regional values for the selected year. Uganda is shown separately as the National Total; some datasets have national values only.</p>
       </section>
+      <section>
+        <div class="chart-container" style="position: relative; max-width: 800px; margin: 0 auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <canvas id="malariaLineChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  
+  const years = ['2018', '2019', '2020', '2021', '2022', '2023', '2024'];
+  const confirmedCases = [508.6, 750.0, 1151.3, 634.0, 892.6, 634.8, 757.0];
+  const reportedAdmissions = [306.0, 693.0, 1092.4, 1120.7, 862.5, 1085.7, 993.0];
+
+  const ctx = document.getElementById('malariaLineChart').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        {
+          label: 'Confirmed Cases (Thousands)',
+          data: confirmedCases,
+          borderColor: '#e74c3c',
+          backgroundColor: 'rgba(231, 76, 60, 0.1)',
+          borderWidth: 3,
+          pointRadius: 5,
+          fill: true,
+          tension: 0.3
+        },
+        {
+          label: 'Reported Admissions (Thousands)',
+          data: reportedAdmissions,
+          borderColor: '#2980b9',
+          backgroundColor: 'rgba(41, 128, 185, 0.1)',
+          borderWidth: 3,
+          pointRadius: 5,
+          fill: true,
+          tension: 0.3
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Uganda Malaria Trends: Cases vs. Admissions (2018–2024)',
+          font: { size: 16 }
+        },
+        tooltip: {
+          mode: 'index',
+          intersect: false
+        }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: 'Year' }
+        },
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: 'Value' }
+        }
+      }
+    }
+  });
+</script>
+      </section>
     </main>
     <footer>
       <p>Uganda Malaria Information Hub | Data Visualisation</p>
