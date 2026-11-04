@@ -1,49 +1,58 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <header>
-      <meta charset="UTF-8">
-      <title>Malaria Information Hub</title>
-      <h1>VISUALISATION TOOLS</h1>
-      <nav>
-        <ul>
-          <li><a href="#map">MAP</a></li>
-          <li><a href="#chart">HISTOGRAM</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="map">
-        <h2>MAP</h2>
-        
-      </section>
-      <section id="chart">
-        <h3>HISTOGRAM</h3>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
- New Chart (document.getElementById('chart'), {
- type: 'bar',
- data: {
-  labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
-  datasets: [
-    {
-      label: '2024 Cases',
-      data: [120, 90, 70, 110, 50]
-    },
-    {
-      label: '2025 Cases',
-      data: [150, 100, 80, 95, 65]
-    }
-  ]
- },
- options: {
-  responsive: true,
-  plugins: { title: { display: true, text: 'Malaria Cases by District' } }
- }
-});
-</script>
-      </section>
-    </main>
-    <footer>
-      <p>Uganda Malaria Information Hub | Data Visualisation</p>
-    </footer>
-  </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Malaria Information Hub</title>
+</head>
+<body>
+  <header>
+    <h1>VISUALISATION TOOLS</h1>
+    <nav>
+      <ul>
+        <li><a href="#map">MAP</a></li>
+        <li><a href="#chart-section">HISTOGRAM</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="map">
+      <h2>MAP</h2>
+    </section>
+    
+    <section id="chart-section">
+      <h3>HISTOGRAM</h3>
+      <canvas id="chart"></canvas>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Uganda Malaria Information Hub | Data Visualisation</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    new Chart(document.getElementById('chart'), {
+      type: 'bar',
+      data: {
+        labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
+        datasets: [
+          {
+            label: '2024 Cases',
+            data: [120, 90, 70, 110, 50]
+          },
+          {
+            label: '2025 Cases',
+            data: [150, 100, 80, 95, 65]
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: { 
+          title: { display: true, text: 'Malaria Cases by District' } 
+        }
+      }
+    });
+  </script>
+</body>
+</html>
