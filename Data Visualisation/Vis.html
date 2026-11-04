@@ -1,61 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Malaria Information Hub</title>
-</head>
-<body>
-  <header>
-    <h1>VISUALISATION TOOLS</h1>
-    <nav>
-      <ul>
-        <li><a href="#map">MAP</a></li>
-        <li><a href="#chart-section">HISTOGRAM</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="map">
-      <h2>MAP</h2>
-    </section>
-    
-    <section id="chart-section">
-      <h3>HISTOGRAM</h3>
-      <canvas id="chart"></canvas>
-    </section>
-  </main>
-  
-  <footer>
-    <p>Uganda Malaria Information Hub | Data Visualisation</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    new Chart(document.getElementById('chart'), {
-      type: 'bar',
-      data: {
-        labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
-        datasets: [
-          {
-            label: '2024 Cases',
-            data: [120, 90, 70, 110, 50]
-          },
-          {
-            label: '2025 Cases',
-            data: [150, 100, 80, 95, 65]
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        plugins: { 
-          title: { display: true, text: 'Malaria Cases by District' } 
-        }
-      }
-    });
-  </script>
-</body>
-</html>
   <html lang="en">
     <head>
       <meta charset="UTF-8">
@@ -69,6 +12,7 @@
       <nav>
         <ul>
           <li><a href="#map-section">MAP</a></li>
+          <li><a href="#chart-section">HISTOGRAM</a></li>
         </ul>
       </nav>
     </header>
@@ -101,6 +45,34 @@
       <p id="status" role="alert" hidden></p>
 
       <p id="dataset-note">Values use each dataset's unit. Repeated entries for a location and year are averaged. Marker size and color compare regional values for the selected year. Uganda is shown separately as the National Total; some datasets have national values only.</p>
+      </section>
+      <section id="chart-section">
+        <h2>HISTOGRAM</h2>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+        new Chart(document.getElementById('chart'), {
+          type: 'bar',
+          data: {
+            labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
+            datasets: [
+              {
+                label: '2024 Cases',
+                data: [120, 90, 70, 110, 50]
+              },
+              {
+                label: '2025 Cases',
+                data: [150, 100, 80, 95, 65]
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              title: { display: true, text: 'Malaria Cases by District' } 
+            }
+          }
+        });
+      </script>
       </section>
     </main>
     <footer>
