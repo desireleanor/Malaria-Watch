@@ -1,231 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Malaria Watch</title>
+ <meta charset="UTF-8">
+<title>Malaria Watch</title>
 </head>
-
 <body>
-<nav>
-    <a href="data_representaion/index.html">DATA REPRESENTATION</a>
-    <a href="Data Visualisation/Vis.html">DATA VISUALISATION</a>
-</nav>
-    
+
+ <header>
     <h1>Malaria Watch</h1>
     <p>Tracking and Understanding Malaria Data in Uganda</p>
-
-
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#sources">Data Sources</a> |
+       
+     <nav>
+         <a href="#about">About</a> |
+          <a href="#facts">Malaria Facts</a> |
+         <a href="#sources">Data Sources</a> |
         <a href="#cleaning">Data Cleaning</a> |
         <a href="#tools">Tools Used</a> |
-        <a href="#visualisation">Visualisation</a> |
+         <a href="#visualisation">Visualisation</a> |
         <a href="#relationships">Data Relationships</a> |
+        <a href="#prevention">Prevention</a> |
         <a href="#challenges">Challenges</a>
-    </nav>
+        </nav>
+    </header>
     <hr>
 
-    
-    <h2 id="about">About the Project</h2>
+    <section id="home">
+        <h2>Welcome to Malaria Watch</h2>
 
-    <p>
-        Malaria Watch is a project that focuses on tracking
-        and presenting malaria-related data in Uganda.
-    </p>
+        <img src="images/malaria-home.jpg"
+             alt="Malaria awareness and prevention">
 
-    <p>
-        The project aims to make malaria information easier
-        to understand by using tables, charts and graphs.
-        It also helps users understand malaria trends and
-        identify areas affected by malaria.
-    </p>
+        <p>
+            Malaria Watch is a project that focuses on
+            tracking and presenting malaria-related data
+            in Uganda.
+        </p>
 
-    <h3>Objectives</h3>
-    <ul>
-        <li>Track malaria-related information in Uganda.</li>
-        <li>Identify trends in malaria cases.</li>
-        <li>Present malaria data in a simple way.</li>
-        <li>Show relationships between different datasets.</li>
-        <li>Promote awareness about malaria.</li>
-    </ul>
+        <p>
+            The project aims to make malaria information
+            easier to understand through tables, charts
+            and graphs.
+        </p>
+    </section>
 
     <hr>
 
-    <h2 id="sources">Source of Data</h2>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About the Project</h2>
 
-    <p>
-        During data collection, we explored different sources,
-        including:
-    </p>
+        <img src="images/malaria-mosquito.jpg"
+             alt="Anopheles mosquito">
 
-    <ul>
-        <li>Uganda Bureau of Statistics (UBOS)</li>
-        <li>World Health Organization (WHO)</li>
-        <li>Our World in Data</li>
-        <li>Hugging Face Datasets</li>
-    </ul>
+        <p>
+            Malaria Watch was developed to help people
+            understand malaria patterns in Uganda using
+            available data.
+        </p>
 
-    <p>
-        DATA SOURCE USED: Uganda Ministry of Health.
-    </p>
+        <p>
+            The project brings together different datasets
+            to provide information that can support
+            awareness, analysis and decision-making.
+        </p>
 
-    <p>
-        A total of 16 datasets were collected for review.
-    </p>
+        <h3>Project Objectives</h3>
 
-    <hr>
-
-    <h2 id="cleaning">Data Access and Cleaning</h2>
-
-    <p>
-        We reviewed the 16 datasets collected during the
-        project. Three datasets were empty, while one
-        contained information similar to another dataset.
-    </p>
-
-    <p>
-        We used Power BI to clean and organise the data.
-        The process involved:
-    </p>
-
-    <ul>
-        <li>Removing empty rows.</li>
-        <li>Handling empty cells.</li>
-        <li>Categorising the data.</li>
-    </ul>
-
-    <p>
-        We then used DAX Studio to export the prepared
-        data from Power BI into Excel files.
-    </p>
+        <ul>
+            <li>Track malaria-related information in Uganda.</li>
+            <li>Identify trends in malaria cases.</li>
+            <li>Present malaria data in a simple way.</li>
+            <li>Show relationships between different datasets.</li>
+            <li>Promote malaria awareness.</li>
+        </ul>
+    </section>
 
     <hr>
 
-    <h2 id="tools">Tools and Languages Used</h2>
+    <!-- MALARIA FACTS -->
+    <section id="facts">
+        <h2>Why Track Malaria?</h2>
 
-    <h3>Tools</h3>
+        <p>
+            Tracking malaria helps us understand how the
+            disease affects different areas and how the
+            number of reported cases changes over time.
+        </p>
 
-    <ul>
-        <li>Power BI - Used to clean and organise data.</li>
-        <li>DAX Studio - Used to export data into Excel files.</li>
-        <li>Bootstrap - Used for website design and layout.</li>
-        <li>Visual Studio Code - Used to write and edit code.</li>
-    </ul>
+        <p>
+            It can also help health workers and decision-makers
+            plan prevention and treatment activities.
+        </p>
 
-    <h3>Programming Languages</h3>
-
-    <ul>
-        <li>HTML</li>
-        <li>Python</li>
-        <li>SQL</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="visualisation">Data Visualisation</h2>
-
-    <p>
-        Data visualisation helps us present information
-        using charts and graphs.
-    </p>
-
-    <p>We use different types of charts, including:</p>
-
-    <ul>
-        <li>Bar graphs - To compare different values.</li>
-        <li>Histograms - To show the distribution of data.</li>
-        <li>Pie charts - To show proportions and percentages.</li>
-    </ul>
-
-    <p>
-        Click the link below to view the data visualisation:
-    </p>
-
-    <a href=""> Data Visualisation</a>
+        <img src="images/health-workers.jpg"
+             alt="Healthcare workers providing health services">
+    </section>
 
     <hr>
 
-    <h2 id="relationships">Data Relationships</h2>
+    <!-- DATA SOURCES -->
+    <section id="sources">
+        <h2>Source of Data</h2>
 
-    <p>
-        This section shows how information from different
-        datasets is related.
-    </p>
+        <p>
+            During data collection, we explored different
+            sources of malaria-related information.
+        </p>
 
-    <p>
-        Tables and figures are used to compare information
-        and show relationships between the datasets.
-    </p>
+        <ul>
+            <li>Uganda Bureau of Statistics (UBOS)</li>
+            <li>World Health Organization (WHO)</li>
+            <li>Our World in Data</li>
+            <li>Hugging Face Datasets</li>
+        </ul>
 
-    <p>
-        Click the link below to view the data representation:
-    </p>
+        <p>
+            After reviewing these sources, we agreed to
+            use data from the Uganda Ministry of Health.
+        </p>
 
-    <a href=""> Data Representation</a>
+        <p>
+            A total of 16 datasets were reviewed during
+            the data collection process.
+        </p>
+    </section>
 
     <hr>
 
+    <!-- DATA CLEANING -->
+    <section id="cleaning">
+        <h2>How We Accessed and Cleaned the Data</h2>
 
+        <img src="images/data-analysis.jpg"
+             alt="Data analysis on a computer">
 
-<h2 id="prevention">Malaria Prevention Measures</h2>
+        <p>
+            We reviewed the 16 datasets collected during
+            the project.
+        </p>
 
-<p>
- Malaria can be prevented by taking different measures
-to avoid mosquito bites and reduce mosquito breeding.
-</p>
+        <p>
+            Three datasets were empty, while one dataset
+            contained information similar to another dataset.
+        </p>
 
-<ul>
-    <li>
-        <strong>Sleeping under mosquito nets:</strong>
-          Sleep under a treated mosquito net to prevent mosquito bites.
-    </li>
+        <p>
+            We used Power BI to clean and organise the data.
+            The process involved:
+        </p>
 
-    <li>
-        <strong>Use mosquito repellents:</strong>
-          Applying a mosquito repellent to skin can help keep mosqitoes away.
-    </li>
+        <ul>
+            <li>Removing empty rows.</li>
+            <li>Handling empty cells.</li>
+            <li>Categorising the data.</li>
+        </ul>
 
-    <li>
-        <strong>Wearing protective clothing:</strong>
-         Wear long-sleeved shirts and long trousers to reduce
-         skin exposure especially when in areas with mosquitoes.
-    </li>
+        <p>
+            We then used DAX Studio to export the prepared
+            data from Power BI into Excel files.
+        </p>
+    </section>
 
-    <li>
-        <strong>Removing stagnant water:</strong>
-        Empty containers and other places where water collects
-        to reduce mosquito breeding.
-    </li>
+    <hr>
 
-    <li>
-        <strong>Keeping the environment clean:</strong>
-        Clear bushes and dispose of rubbish properly.
-    </li>
+    <!-- TOOLS AND LANGUAGES -->
+    <section id="tools">
+        <h2>Tools and Languages Used</h2>
 
-    <li>
-        <strong>Installing window and door screens:</strong>
-        Use mosquito screens to prevent mosquitoes from
-        entering houses.
-    </li>
+        <h3>Tools</h3>
 
-    <li>
-        <strong>Seeking early medical attention:</strong>
-        Get tested when experiencing malaria symptoms and
-        follow the prescribed treatment.
-    </li>
-</ul>
+        <ul>
+            <li>Power BI - Used to clean and organise data.</li>
+            <li>DAX Studio - Used to export data into Excel files.</li>
+            <li>Bootstrap - Used for website design and layout.</li>
+            <li>Visual Studio Code - Used to write and edit code.</li>
+        </ul>
 
-<p>
-    Preventing malaria requires individual and community
-    effort. Everyone has a role to play in reducing
-    the spread of malaria.
-</p>
+        <h3>Programming Languages</h3>
 
+        <ul>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- DATA VISUALISATION -->
+    <section id="visualisation">
+        <h2>Data Visualisation</h2>
+
+        <p>
+            Data visualisation helps us present information
+            using charts and graphs.
+        </p>
+
+        <p>Some of the visualisation methods include:</p>
+
+        <ul>
+            <li>Bar graphs - Used to compare different values.</li>
+            <li>Histograms - Used to show data distribution.</li>
+            <li>Pie charts - Used to show proportions and percentages.</li>
+        </ul>
+
+        <p>
+            Visit the Data Visualisation page to explore
+            the charts and graphs.
+        </p>
+
+        <!-- ADD DATA VISUALISATION LINK HERE -->
+        <a href="">View Data Visualisation</a>
+    </section>
+
+    <hr>
+
+    <!-- DATA RELATIONSHIPS -->
+    <section id="relationships">
+        <h2>Data Relationships</h2>
+
+        <p>
+            This section shows how information from
+            different datasets is related.
+        </p>
+
+        <p>
+            Tables and figures are used to compare
+            information and show relationships between
+            the datasets.
+        </p>
+
+        <!-- ADD DATA REPRESENTATION LINK HERE -->
+        <a href="">View Data Representation</a>
+    </section>
+
+    <hr>
+
+    <!-- MALARIA PREVENTION -->
+    <section id="prevention">
+        <h2>Measures Used to Prevent Malaria</h2>
+
+        <img src="images/mosquito-net.jpg"
+             alt="Insecticide-treated mosquito net">
+
+        <p>
+            Malaria can be prevented by avoiding mosquito
+            bites and reducing mosquito breeding places.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Using mosquito nets:</strong>
+                Sleep under insecticide-treated mosquito nets.
+            </li>
+
+            <li>
+                <strong>Using mosquito repellents:</strong>
+                Apply approved mosquito repellents.
+            </li>
+
+            <li>
+                <strong>Wearing protective clothing:</strong>
+                Wear long-sleeved shirts and long trousers.
+            </li>
+
+            <li>
+                <strong>Removing stagnant water:</strong>
+                Empty containers where water collects.
+            </li>
+
+            <li>
+                <strong>Keeping the environment clean:</strong>
+                Clear rubbish and maintain clean surroundings.
+            </li>
+
+            <li>
+                <strong>Installing window screens:</strong>
+                Use screens to prevent mosquitoes from
+                entering houses.
+            </li>
+
+            <li>
+                <strong>Seeking medical attention:</strong>
+                Get tested when experiencing malaria symptoms
+                and follow prescribed treatment.
+            </li>
+        </ul>
+
+        <p>
+            Everyone has a role to play in preventing
+            and reducing malaria.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- CHALLENGES -->
+    <section id="challenges">
+        <h2>Pitfalls and Challenges</h2>
+
+        <p>
+            During the project, we faced some challenges
+            when accessing and preparing the data.
+        </p>
+
+        <ul>
+            <li>Finding suitable and reliable datasets.</li>
+            <li>Dealing with empty datasets.</li>
+            <li>Handling missing information.</li>
+            <li>Identifying datasets with similar information.</li>
+            <li>Organising information from different datasets.</li>
+        </ul>
+
+        <p>
+            These challenges helped us understand the
+            importance of cleaning and organising data
+            before analysing it.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
     <footer>
         <h3>Malaria Watch</h3>
+
+        <p>Tracking malaria data in Uganda.</p>
+
         <p>2026 Malaria Watch Project</p>
     </footer>
 
 </body>
 </html>
-
