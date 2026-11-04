@@ -17,6 +17,30 @@
       </section>
       <section>
         <h3>HISTOGRAM</h3>
+        <canvas id="chart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ Chart(document.getElementById('chart'), {
+ type: 'bar',
+ data: {
+  labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
+  datasets: [
+    {
+      label: '2024 Cases',
+      data: [120, 90, 70, 110, 50]
+    },
+    {
+      label: '2025 Cases',
+      data: [150, 100, 80, 95, 65]
+    }
+  ]
+ },
+ options: {
+  responsive: true,
+  plugins: { title: { display: true, text: 'Malaria Cases by District' } }
+ }
+});
+</script>
       </section>
     </main>
     <footer>
