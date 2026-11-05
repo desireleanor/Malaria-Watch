@@ -2,39 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Browse reported and estimated malaria statistics used by Malaria Watch.">
-    <title>Dataset library | Malaria Watch</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Malaria Data Representation</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-light">
-    <nav class="navbar navbar-dark bg-success">
-        <div class="container flex-column flex-md-row align-items-start align-items-md-center gap-2">
-            <a class="navbar-brand fw-bold mb-0" href="../malaria_watch-homepage/index.html"><span class="badge bg-light text-success">MW</span> Malaria Watch</a>
-            <div class="d-flex flex-wrap gap-3" aria-label="Main navigation">
-                <a class="link-light" href="../malaria_watch-homepage/index.html">Home</a>
-                <a class="link-light" href="../Data%20Visualisation/Vis.html">Visualisations</a>
-                <a class="link-light fw-semibold" aria-current="page" href="index.html">Datasets</a>
-            </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Malaria Data Representation</a>
         </div>
     </nav>
-    <header class="bg-success-subtle">
-        <div class="container py-5">
-            <p class="text-success fw-semibold text-uppercase">Malaria Watch · Data library</p>
-            <div class="row align-items-end g-3">
-                <div class="col-lg-8"><h1 class="display-5 fw-bold text-success-emphasis mb-3">Explore the datasets.</h1><p class="lead text-secondary mb-0">Browse source tables for reported and estimated malaria indicators.</p></div>
-                <div class="col-lg-4 text-lg-end"><span class="badge text-bg-success p-2">▤ Open data tables</span></div>
-            </div>
-        </div>
-    </header>
+
     <main class="container py-5">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
-            <div><h2 class="h4 mb-1">Available datasets</h2><p class="text-secondary mb-0">Select a dataset to expand its table. Scroll horizontally on smaller screens.</p></div>
-            <a class="btn btn-outline-success btn-sm" href="../Data%20Visualisation/Vis.html">Go to visualisations <span aria-hidden="true">→</span></a>
+
+        <div class="text-center mb-5">
+            <h1 class="text-success">Malaria Data Datasets</h1>
+
+            <p class="text-muted">
+                Explore reported and estimated malaria statistics.
+            </p>
+
         </div>
-        <div id="datasetsContainer" class="vstack gap-3" aria-live="polite"></div>
+
+        <div id="datasetsContainer"></div>
+
     </main>
-    <footer class="bg-success text-white py-4"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><strong>Malaria Watch · Dataset library</strong><span class="text-white-50">Review source definitions before interpreting values.</span></div></footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
     <script src="script.js"></script>
+
 </body>
 </html>

@@ -54,10 +54,6 @@ const datasets = [
 ];
 
 
-// ========================================
-// CSV PARSER
-// ========================================
-
 function parseCSV(text) {
     const rows = [];
     let row = [];
@@ -101,7 +97,6 @@ function parseCSV(text) {
         }
     }
 
-    // Add the final row
     row.push(value.trim());
 
     if (row.some(cell => cell !== "")) {
@@ -112,15 +107,11 @@ function parseCSV(text) {
 }
 
 
-// ========================================
-// CREATE A TABLE FROM CSV DATA
-// ========================================
 
 function createTable(rows) {
     const table = document.createElement("table");
     table.className = "table table-striped table-bordered table-hover";
 
-    // Create the table header
     const thead = document.createElement("thead");
     thead.className = "table-success";
 
@@ -135,7 +126,6 @@ function createTable(rows) {
     thead.appendChild(headerRow);
     table.appendChild(thead);
 
-    // Create the table body
     const tbody = document.createElement("tbody");
 
     rows.slice(1).forEach(row => {
@@ -156,26 +146,28 @@ function createTable(rows) {
 }
 
 
-// ========================================
-// LOAD AND DISPLAY EACH DATASET
-// ========================================
 
 async function loadDataset(dataset, datasetsContainer) {
-    // Create the dataset card
     const card = document.createElement("div");
     card.className = "card mb-4 shadow-sm";
 
-    // Create the card header
     const header = document.createElement("div");
     header.className =
         "card-header bg-success text-white d-flex justify-content-between align-items-center";
 
-    // Create the title
     const title = document.createElement("h5");
     title.className = "mb-0";
     title.textContent = dataset.name;
 
-    // Create the button
+    const content = document.createElement("div");
+    content.className = "card-body dataset-content";
+    content.style.display = "none";
+
+    card.appendChild(header);
+    card.appendChild(content);
+
+    datasetsContainer.appendChild(card);
+
     const button = document.createElement("button");
     button.className = "btn btn-light btn-sm toggle-data";
     button.textContent = "View Data";
@@ -184,19 +176,6 @@ async function loadDataset(dataset, datasetsContainer) {
     header.appendChild(title);
     header.appendChild(button);
 
-    // Create the content area, hidden initially
-    const content = document.createElement("div");
-    content.className = "card-body dataset-content";
-    content.style.display = "none";
-
-    // Add the header and content to the card
-    card.appendChild(header);
-    card.appendChild(content);
-
-    // Add the card to the webpage
-    datasetsContainer.appendChild(card);
-
-    // Button toggles only this dataset's content
     button.addEventListener("click", function () {
         const isHidden = content.style.display === "none";
 
@@ -205,7 +184,6 @@ async function loadDataset(dataset, datasetsContainer) {
         button.setAttribute("aria-expanded", String(isHidden));
     });
 
-    // Show a loading message
     content.textContent = "Loading dataset...";
 
     try {
@@ -219,7 +197,6 @@ async function loadDataset(dataset, datasetsContainer) {
 
         const csvText = await response.text();
 
-        // Detect common binary Office-file content
         if (
             csvText.startsWith("PK") &&
             csvText.includes("[Content_Types].xml")
@@ -235,20 +212,17 @@ async function loadDataset(dataset, datasetsContainer) {
             throw new Error("The dataset is empty.");
         }
 
-        // Display the number of records
         const recordCount = document.createElement("p");
         recordCount.className = "text-muted";
         recordCount.textContent =
             `Successfully loaded ${rows.length - 1} records.`;
 
-        // Create a scrollable table
         const tableWrapper = document.createElement("div");
         tableWrapper.className = "table-responsive";
 
         const table = createTable(rows);
         tableWrapper.appendChild(table);
 
-        // Replace loading message with the data
         content.replaceChildren(recordCount, tableWrapper);
 
         console.log(
@@ -256,7 +230,6 @@ async function loadDataset(dataset, datasetsContainer) {
         );
 
     } catch (error) {
-        // Show the error inside the affected dataset card
         content.replaceChildren();
 
         const errorMessage = document.createElement("p");
@@ -274,9 +247,6 @@ async function loadDataset(dataset, datasetsContainer) {
 }
 
 
-// ========================================
-// START THE DASHBOARD
-// ========================================
 
 document.addEventListener("DOMContentLoaded", function () {
     const datasetsContainer =
