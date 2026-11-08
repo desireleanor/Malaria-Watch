@@ -77,7 +77,7 @@
           <canvas id="chart" aria-label="Bar chart comparing malaria cases by district"></canvas>
         </div>
       <script>
-        new Chart(document. get Element By Id('chart'), {
+        new Chart(document. getElementById('chart'), {
           type: 'bar',
           data: {
             labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
@@ -103,8 +103,7 @@
         </div>
       </section>
       <section id="Linegraph-section" class="col-lg-6">
-        <div class="card shadow-sm h-100"><div class="card-body"><p class="text-success fw-semibold text-uppercase">Trend over time</p>
-          <h2 class="h3">Cases &amp; admissions</h2>
+        <div class="card shadow-sm h-100"><div class="card-body"><p class="text-success fw-semibold text-uppercase">Trend over time</p><h2 class="h3">Cases &amp; admissions</h2>
         <div class="w-100">
         <canvas id = "malaria Line Chart"></canvas>
         </div>
@@ -125,7 +124,7 @@
                   label: 'Confirmed Cases (Thousands)',
                   data: confirmedCases,
                   borderColor: 'Green',
-                  backgroundColor: 'rgba(231, 76, 60, 0.2)',
+                  backgroundColor: 'rgba(231, 76, 60, 0.1)',
                   borderWidth: 3,
                   pointRadius: 5,
                   fill: true,
@@ -135,7 +134,7 @@
                   label: 'Reported Admissions (Thousands)',
                   data: reportedAdmissions,
                   borderColor: 'Green',
-                  backgroundColor: 'rgba(41, 128, 185, 0.2)',
+                  backgroundColor: 'rgba(41, 128, 185, 0.1)',
                   borderWidth: 3,
                   pointRadius: 5,
                   fill: true,
@@ -149,7 +148,7 @@
                 title: {
                   display: true,
                   text: 'Uganda Malaria Trends: Cases vs. Admissions (2018–2024)',
-                  font: { size: 18 }
+                  font: { size: 16 }
                 },
                 tooltip: {
                   mode: 'index',
