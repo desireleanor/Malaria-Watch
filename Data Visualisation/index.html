@@ -27,19 +27,58 @@
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <main class="container py-5">
       <section id="map-section" class="card shadow-sm mb-4">
-        <div class="card-body p-3 p-md-4"><div class="d-flex justify-content-between gap-3 mb-4"><div><p class="text-success fw-semibold text-uppercase">Regional view</p><h2 class="h3">Explore the map</h2><p class="text-secondary mb-0">Select a dataset and reporting year. Markers show approximate regional centers.</p></div><span class="badge text-bg-success align-self-start fs-5" aria-hidden="true">⌖</span></div>
-        <div class="row g-3 align-items-end">
-          <div class="col-md-5"><label class="form-label" for="dataset-select">Dataset</label><select class="form-select" id="dataset-select" aria-label="Select dataset" disabled><option>Loading datasets...</option></select></div>
-          <div class="col-md-3"><label class="form-label" for="year-select">Reporting year</label><select class="form-select" id="year-select" aria-label="Select reporting year" disabled><option>Loading years...</option></select></div>
-          <div class="col-md-4"><button class="btn btn-outline-success w-100" id="reset-map" type="button">Reset map view</button></div>
-        </div>
-        <div class="row g-3 my-3">
-          <div class="col-sm-6"><div class="card bg-body-tertiary h-100"><div class="card-body d-flex justify-content-between align-items-center"><span class="text-secondary">Regions shown</span><strong class="fs-4" id="region-count">-</strong></div></div></div>
-          <div class="col-sm-6"><div class="card bg-body-tertiary h-100"><div class="card-body d-flex justify-content-between align-items-center"><span class="text-secondary">National total</span><strong class="fs-4"><span id="national-value">-</span> <small class="fs-6 text-secondary" id="unit-label"></small></strong></div></div></div>
-        </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between gap-2 bg-body-tertiary border rounded-top px-3 py-2 small text-secondary"></div>
-        <div id="map" class="ratio ratio-4x3 border rounded-bottom overflow-hidden" aria-label="Map plot of regional values"><div id="map-canvas" role="application" aria-label="Satellite map of Uganda"></div></div>
-        <p class="alert alert-danger mt-3 mb-0" id="status" role="alert" hidden></p>
+        <div class="card-body p-3 p-md-4">
+          <h2 class="h3">Explore the map</h2>
+          <p class="text-secondary">Select a dataset and reporting year. Markers show approximate regional centers.</p>
+      
+          <div class="row g-3 align-items-end mb-3">
+            <div class="col-md-5">
+              <label class="form-label" for="dataset-select">Dataset</label>
+              <select class="form-select" id="dataset-select"></select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label" for="year-select">Reporting year</label>
+              <select class="form-select" id="year-select" disabled></select>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-outline-success w-100" id="reset-map" type="button">Reset map view</button>
+            </div>
+          </div>
+      
+          <div class="row g-3 mb-3">
+            <div class="col-sm-6">
+              <div class="card bg-body-tertiary">
+                <div class="card-body d-flex justify-content-between">
+                  <span class="text-secondary">Regions shown</span>
+                  <strong id="region-count">-</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card bg-body-tertiary">
+                <div class="card-body d-flex justify-content-between">
+                  <span class="text-secondary">National total</span>
+                  <strong><span id="national-value">-</span> <small class="fw-normal text-secondary" id="unit-label"></small></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div id="map" class="ratio ratio-4x3 border rounded overflow-hidden">
+            <div id="map-canvas" role="application" aria-label="Satellite map of Uganda"></div>
+          </div>
+      
+          <div class="d-flex flex-wrap align-items-center gap-2 small mt-3">
+            <span class="text-secondary">Marker colour:</span>
+            <span class="badge text-bg-success">Lowest</span>
+            <span class="badge text-bg-warning">Middle</span>
+            <span class="badge text-bg-danger">Highest</span>
+          </div>
+      
+          <p class="alert alert-light border mt-3 mb-0" id="map-detail" aria-live="polite">Select a marker to see details.</p>
+          <p class="alert alert-danger mt-3 mb-0" id="status" role="alert" hidden></p>
+      
+          <p class="small text-secondary mt-3 mb-0" id="dataset-note">Values use each dataset's unit. Repeated entries for a location and year are averaged. Marker size and color compare regional values for the selected year. Uganda is shown separately as the National Total; some datasets have national values only.</p>
         </div>
       </section>
       <div class="row g-4">
