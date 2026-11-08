@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="Explore map and chart views of malaria indicators in Uganda.">
-      <title>Data visualisations | Malaria Watch</title>
+      <title>Data Visualisations | Malaria Watch</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     </head>
@@ -13,33 +13,61 @@
         <div class="container flex-column flex-md-row align-items-start align-items-md-center gap-2">
           <a class="navbar-brand fw-bold mb-0" href="../malaria_watch-homepage/index.html"><span class="badge bg-light text-success">MW</span> Malaria Watch</a>
           <div class="d-flex flex-wrap gap-3" aria-label="Main navigation">
-            <a class="link-light" href="../malaria_watch-homepage/index.html">Home</a>
-            <a class="link-light" href="../data_representation/index.html">Datasets</a>
+            <a class="nav-link text-white fw-bold" href="../malaria_watch-homepage/index.html">Home</a>
+            <a class="nav-link text-white fw-bold" href="../data_representation/index.html">Datasets</a>
+            <a class="nav-link text-white fw-bold" href="../malaria_watch-homepage/team.html">Team</a>
           </div>
         </div>
       </nav>
       <header class="bg-success-subtle"><div class="container py-5">
         <p class="text-success fw-semibold text-uppercase">Malaria Watch · Data explorer</p>
-        <div class="row align-items-end g-3"><div class="col-lg-8"><h1 class="display-5 fw-bold text-success-emphasis mb-3">Malaria data, in context.</h1><p class="lead text-secondary mb-0">Explore regional patterns and compare reported indicators across time.</p></div><div class="col-lg-4"><nav class="d-flex flex-wrap gap-2 justify-content-lg-end" aria-label="Visualisation sections"><a class="btn btn-outline-success btn-sm" href="#map-section">Map</a><a class="btn btn-outline-success btn-sm" href="#chart-section">Comparison</a><a class="btn btn-outline-success btn-sm" href="#Linegraph-section">Trends</a></nav></div></div>
+        <div class="row align-items-end g-3"><div class="col-lg-8"><h1 class="display-5 fw-bold text-success-emphasis mb-3">Malaria data, in context.</h1>
+          <p class="lead text-secondary mb-0">Explore regional patterns and compare reported indicators across time.</p></div><div class="col-lg-4"><nav class="d-flex flex-wrap gap-2 justify-content-lg-end" aria-label="Visualisation sections"><a class="btn btn-outline-success btn-sm" href="#map-section">Map</a><a class="btn btn-outline-success btn-sm" href="#chart-section">Comparison</a><a class="btn btn-outline-success btn-sm" href="#Linegraph-section">Trends</a></nav></div></div>
       </div></header>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <main class="container py-5">
       <section id="map-section" class="card shadow-sm mb-4">
-        <div class="card-body p-3 p-md-4"><div class="d-flex justify-content-between gap-3 mb-4"><div><p class="text-success fw-semibold text-uppercase">Regional view</p><h2 class="h3">Explore the map</h2><p class="text-secondary mb-0">Select a dataset and reporting year. Markers show approximate regional centers.</p></div><span class="badge text-bg-success align-self-start fs-5" aria-hidden="true">⌖</span></div>
-        <div class="row g-3 align-items-end">
-          <div class="col-md-5"><label class="form-label" for="dataset-select">Dataset</label><select class="form-select" id="dataset-select" aria-label="Select dataset" disabled><option>Loading datasets...</option></select></div>
-          <div class="col-md-3"><label class="form-label" for="year-select">Reporting year</label><select class="form-select" id="year-select" aria-label="Select reporting year" disabled><option>Loading years...</option></select></div>
-          <div class="col-md-4"><button class="btn btn-outline-success w-100" id="reset-map" type="button">Reset map view</button></div>
-        </div>
-        <div class="row g-3 my-3">
-          <div class="col-sm-6"><div class="card bg-body-tertiary h-100"><div class="card-body d-flex justify-content-between align-items-center"><span class="text-secondary">Regions shown</span><strong class="fs-4" id="region-count">-</strong></div></div></div>
-          <div class="col-sm-6"><div class="card bg-body-tertiary h-100"><div class="card-body d-flex justify-content-between align-items-center"><span class="text-secondary">National total</span><strong class="fs-4"><span id="national-value">-</span> <small class="fs-6 text-secondary" id="unit-label"></small></strong></div></div></div>
-        </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between gap-2 bg-body-tertiary border rounded-top px-3 py-2 small text-secondary"><span>Satellite imagery</span><span>Drag to pan · Scroll or use map controls to zoom</span></div>
-        <div id="map" class="ratio ratio-4x3 border rounded-bottom overflow-hidden" aria-label="Map plot of regional values"><div id="map-canvas" role="application" aria-label="Satellite map of Uganda"></div></div>
-        <p class="alert alert-success mt-3 mb-0" id="map-detail" aria-live="polite">Select a marker to see details.</p>
-        <p class="alert alert-danger mt-3 mb-0" id="status" role="alert" hidden></p>
-        <p class="small text-secondary mt-3 mb-0" id="dataset-note">Values use each dataset's unit. Repeated entries for a location and year are averaged. Marker size and color compare regional values for the selected year. Uganda is shown separately as the National Total; some datasets have national values only.</p>
+        <div class="card-body p-3 p-md-4">
+          <h2 class="h3">Explore the map</h2>
+          <p class="text-secondary">Select a dataset and reporting year. Markers show approximate regional centers.</p>
+          <div class="row g-3 mb-3">
+            <div class="col-md-8">
+              <label class="form-label" for="dataset-select">Dataset</label>
+              <select class="form-select" id="dataset-select"></select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label" for="year-select">Reporting year</label>
+              <select class="form-select" id="year-select" disabled></select>
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-sm-6">
+              <div class="card bg-body-tertiary">
+                <div class="card-body d-flex justify-content-between">
+                  <span class="text-secondary">Regions shown</span>
+                  <strong id="region-count">-</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card bg-body-tertiary">
+                <div class="card-body d-flex justify-content-between">
+                  <span class="text-secondary">National total</span>
+                  <strong><span id="national-value">-</span> <small class="fw-normal text-secondary" id="unit-label"></small></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="map" class="ratio ratio-4x3 border rounded overflow-hidden">
+            <div id="map-canvas"></div>
+          </div>
+          <div class="d-flex flex-wrap align-items-center gap-2 small mt-3">
+            <span class="text-secondary">Marker colour:</span>
+            <span class="badge text-bg-success">Lowest</span>
+            <span class="badge text-bg-warning">Middle</span>
+            <span class="badge text-bg-danger">Highest</span>
+          </div>
+          <p class="alert alert-danger mt-3 mb-0" id="status" role="alert" hidden></p>
         </div>
       </section>
       <div class="row g-4">
@@ -49,7 +77,7 @@
           <canvas id="chart" aria-label="Bar chart comparing malaria cases by district"></canvas>
         </div>
       <script>
-        new Chart(document.getElementById('chart'), {
+        new Chart(document. getElementById('chart'), {
           type: 'bar',
           data: {
             labels: ['Mukono', 'Kampala', 'Wakiso', 'Jinja', 'Mbale'],
@@ -77,7 +105,7 @@
       <section id="Linegraph-section" class="col-lg-6">
         <div class="card shadow-sm h-100"><div class="card-body"><p class="text-success fw-semibold text-uppercase">Trend over time</p><h2 class="h3">Cases &amp; admissions</h2>
         <div class="w-100">
-        <canvas id = "malariaLineChart"></canvas>
+        <canvas id = "malaria Line Chart"></canvas>
         </div>
         <script>
           
@@ -95,7 +123,7 @@
                 {
                   label: 'Confirmed Cases (Thousands)',
                   data: confirmedCases,
-                  borderColor: '#e74c3c',
+                  borderColor: '#27ae60',
                   backgroundColor: 'rgba(231, 76, 60, 0.1)',
                   borderWidth: 3,
                   pointRadius: 5,
@@ -105,7 +133,7 @@
                 {
                   label: 'Reported Admissions (Thousands)',
                   data: reportedAdmissions,
-                  borderColor: '#2980b9',
+                  borderColor: '#e67e22',
                   backgroundColor: 'rgba(41, 128, 185, 0.1)',
                   borderWidth: 3,
                   pointRadius: 5,
@@ -124,7 +152,7 @@
                 },
                 tooltip: {
                   mode: 'index',
-                  intersect: false
+                  intersect: false,
                 }
               },
               scales: {
@@ -132,7 +160,7 @@
                   title: { display: true, text: 'Year' }
                 },
                 y: {
-                  beginAtZero: true,
+                  beginatzero: true,
                   title: { display: true, text: 'Value' }
                 }
               }
@@ -144,7 +172,7 @@
       </div>
     </main>
     <footer class="bg-success text-white py-4">
-      <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><strong>Malaria Watch · Data visualisations</strong><span class="text-white-50">Review source definitions before interpreting values.</span></div>
+      <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><strong>Malaria Watch · Data visualisations</strong></div>
     </footer>
       <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
