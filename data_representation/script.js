@@ -33,11 +33,11 @@ const datasets = [
     },
     {
         name: "Malaria Incidence Rate - Dataset 1",
-        file: "data/Export_Malaria_Incidence_Rate_(Per_1,000_Population) .csv"
+        file: "data/Export_Malaria_Incidence_Rate_(Per_1,000_Population).csv"
     },
     {
         name: "Malaria Incidence Rate - Dataset 2",
-        file: "data/Export_Malaria_Incidence_Rate_(Per_1,000_Population).csv"
+        file: "data/Export_Malaria_Incidence_Rate_(Per_1,000_Population)1.csv"
     },
     {
         name: "Malaria Incidence Rate - Dataset 3",
